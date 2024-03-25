@@ -12,7 +12,7 @@ print('aman\nhanspal\n22 years\ndypu')
 
 #arithmetic operators
 print(11**3) #Exponent operator
-print(22 // 10) #floor division operator
+print(9330 // 100) #floor division operator
 
 #comparision operators
 print('apple' == 'banana')

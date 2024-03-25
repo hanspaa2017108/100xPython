@@ -61,3 +61,66 @@ if weather == "cloudy" or weather == "rainy":
 budget = 400
 destination = "Paris" if budget > 600 else "Goa"
 print(destination)
+
+# Display report card remarks using if else
+score = 28
+if score == 100:
+  print("Outstanding")
+elif 80 < score < 100:
+  print("Excellent")
+elif 60 < score < 81:
+  print("Good")
+elif score <=60:
+  print("Can do better!")
+
+# Calculate electricity bill using if else
+  
+units = 241
+if 0 < units < 100:
+  print((units*1.5))
+elif 101 < units < 200:
+  print((units*2.5))
+elif 201 < units < 300:
+   print((units*4.0))
+elif 301 < units < 350:
+  print((units*5.0))
+#else units > 300: #invalid syntax
+else:
+  print(1500)
+
+#Build a currency converter
+usd_value = 5000
+target_currency = "INR"
+
+if target_currency == "INR":
+  target_value = usd_value * 76
+elif target_currency == "JPY":
+  target_value = usd_value * 126
+elif target_currency == "EUR":
+  target_value = usd_value * 0.9
+
+print(target_value)
+
+#Build a currency notes calculator
+#Monica has to pay her monthly rent to the landlord. She currently only has 10 rupee notes, 50 rupee notes and 100 rupee notes. Given the amount, help her calculate the number of 10 rupee notes, 50 rupee notes and 100 rupee notes she will need to pay to her landlord.
+
+rent = 9330
+no_100_notes = 0
+no_50_notes = 0
+no_10_notes = 0
+
+# Calculate the number of notes required to meet the given rent amount
+no_100_notes = rent // 100
+rent = rent % 100
+
+no_50_notes = rent // 50
+rent = rent % 50
+
+no_10_notes = rent // 10
+rent = rent % 10
+
+# Print the result
+print("Monica will require:")
+print(str(no_100_notes) + " x ₹100 notes")
+print(str(no_50_notes) + " x ₹50 notes")
+print(str(no_10_notes) + " x ₹10 notes")
