@@ -1,0 +1,24 @@
+richest_list = ["Aman Hanspal - $200", "Kaif Bijali- $189", "Gaurav Singh - $224", "Aditya Menon- $129"]
+
+name_list = None
+money_list = 0
+
+for names in richest_list:
+    name, amount = names.split('-')
+    amount = int(amount.replace('$', ''))
+    if amount > money_list:
+        money_list = amount
+        name_list = name
+    
+print(f"{name_list} is richer with net worth {money_list}")
+
+email_list = ["Aman Hanspal- aman@1.com", "Kaif Bijali- kaif@1.com", "Gaurav Singh- gaurav@1.com", "Aditya Menon- "]
+
+for item in email_list:
+    # Split the name and email
+    name, email = item.split('-')
+    # Strip leading and trailing whitespace from the email
+    email = email.strip()
+    # Check if the email is empty
+    if not email:
+        print(name.strip())
